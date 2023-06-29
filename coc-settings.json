@@ -1,0 +1,11 @@
+{
+    "coc.preferences.formatOnType": true,
+    "coc.preferences.formatOnSaveFileTypes": [
+        "python"
+    ],
+    "python.jediEnabled": true,
+    "suggest.timeout": 5000,
+    "python.formatting.provider": "black",
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": false
+}
