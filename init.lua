@@ -45,11 +45,7 @@ vim.cmd [[silent! colorscheme dracula]]
 -- vim.cmd [[silent! colorscheme nordfox]]
 -- vim.cmd [[silent! colorscheme terafox]]
 
--- Set node.exe
-vim.cmd [[let g:node_host_prog = expand("/usr/local/lib/node_modules/neovim/bin/cli.js")]]
-vim.cmd [[let g:coc_node_path = expand("/usr/bin/node")]]
-
--- Set python.exe
+-- Set python binary
 vim.cmd [[let g:python3_host_prog = expand("~/neovim_venv/bin/python")]]
 
 -- Keybindings to run the file being edited
