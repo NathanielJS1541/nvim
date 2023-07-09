@@ -54,6 +54,7 @@ return require("packer").startup(function()
   
   use {
     "romgrk/barbar.nvim",
+    require('barbar').setup(),
     requires = {"nvim-tree/nvim-web-devicons"},
     requires = {"lewis6991/gitsigns.nvim"}
   }
