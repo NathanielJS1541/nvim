@@ -20,7 +20,7 @@ return require("packer").startup(function()
   
   use {
     "nvim-telescope/telescope.nvim",
-    requires = { {"nvim-lua/plenary.nvim"}, {"kyazdani42/nvim-web-devicons"} }
+    requires = { {"nvim-lua/plenary.nvim"}, {"nvim-tree/nvim-web-devicons"} }
   }
   
   use {"nvim-telescope/telescope-fzf-native.nvim", run = "make" }
@@ -33,9 +33,9 @@ return require("packer").startup(function()
   }
 
   use {
-    "kyazdani42/nvim-tree.lua",
+    "nvim-tree/nvim-tree.lua",
     requires = {
-      "kyazdani42/nvim-web-devicons", -- optional, for file icons
+      "nvim-tree/nvim-web-devicons", -- optional, for file icons
     },
     tag = "nightly" -- optional, updated every week. (see issue #1193)
   }
@@ -49,13 +49,13 @@ return require("packer").startup(function()
 
   use {
     "nvim-lualine/lualine.nvim",
-    requires = { "kyazdani42/nvim-web-devicons", opt = true }
+    requires = { "nvim-tree/nvim-web-devicons", opt = true }
   }
   
   use {
     "romgrk/barbar.nvim",
-    require("barbar").setup(),
-    requires = {"kyazdani42/nvim-web-devicons"}
+    requires = {"nvim-tree/nvim-web-devicons"},
+    requires = {"lewis6991/gitsigns.nvim"}
   }
 
   use {"tjdevries/colorbuddy.vim"}
