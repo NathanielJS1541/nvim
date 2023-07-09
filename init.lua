@@ -46,11 +46,11 @@ vim.cmd [[silent! colorscheme dracula]]
 -- vim.cmd [[silent! colorscheme terafox]]
 
 -- Set node.exe
-vim.cmd [[let g:node_host_prog = expand("~/scoop/persist/nodejs/bin/node_modules/neovim/bin/cli.js")]]
-vim.cmd [[let g:coc_node_path = expand("~/scoop/apps/nodejs/current/node.EXE")]]
+vim.cmd [[let g:node_host_prog = expand("/usr/local/lib/node_modules/neovim/bin/cli.js")]]
+vim.cmd [[let g:coc_node_path = expand("/usr/bin/node")]]
 
 -- Set python.exe
-vim.cmd [[let g:python3_host_prog = expand("~/neovim_venv/Scripts/python.EXE")]]
+vim.cmd [[let g:python3_host_prog = expand("~/neovim_venv/bin/python")]]
 
 -- Keybindings to run the file being edited
 -- Run Python Files with F9
